@@ -1,0 +1,33 @@
+---
+- MiqPolicy:
+    name: analyse incoming container images
+    description: Analyse incoming container images
+    expression: 
+    towhat: ContainerImage
+    guid: e7a270bc-109b-11e6-86ba-02424d459b45
+    created_by: admin
+    updated_by: admin
+    notes: 
+    active: true
+    mode: control
+    read_only: true
+    MiqPolicyContent:
+    - qualifier: success
+      success_sequence: 1
+      failure_sequence: 1
+      failure_synchronous: true
+      MiqEventDefinition:
+        name: containerimage_created
+        description: Container Image Discovered
+        guid: 89ecfbd8-6616-11e6-91a3-005056a61da7
+        event_type: Default
+        definition: 
+        default: 
+        enabled: 
+      MiqAction:
+        name: container_image_analyze
+        description: Initiate SmartState Analysis for Container Image
+        guid: 88b2dc92-6616-11e6-91a3-005056a61da7
+        action_type: default
+        options: {}
+    Condition: []

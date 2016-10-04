@@ -1,0 +1,126 @@
+---
+- Local Datacenter:
+    name: Local Datacenter
+    description: 
+    template:
+    - name: New Red Hat Linux Server 7.2
+      description: 'Provisning a new VM with linux server with RHEL7.2 '
+      type: ServiceTemplateAnsibleTower
+      display: true
+      service_type: atomic
+      prov_type: generic_ansible_tower
+      provision_cost: 
+      long_description: ''
+      options: {}
+      service_template_catalog_name: Local Datacenter
+      resource_actions:
+      - action: Provision
+        ae_namespace: ConfigurationManagement/AnsibleTower/Service/Provisioning/StateMachines
+        ae_class: Provision
+        ae_instance: default
+        ae_message: 
+        ae_attributes: {}
+        dialog_label: Provision new Server
+      custom_buttons: []
+      custom_button_sets: []
+    - name: New Windows Server 2012 R2
+      description: Provision new Windows Server 2012 R2
+      type: 
+      display: false
+      service_type: atomic
+      prov_type: vmware
+      provision_cost: 
+      long_description: 
+      options: {}
+      service_template_catalog_name: Local Datacenter
+      resource_actions:
+      - action: Provision
+        ae_namespace: Service/Provisioning/StateMachines
+        ae_class: ServiceProvision_Template
+        ae_instance: CatalogItemInitialization
+        ae_message: 
+        ae_attributes: {}
+        dialog_label: VMware - CatalogItem (flex)
+      - action: Retirement
+        ae_namespace: Service/Retirement/StateMachines
+        ae_class: ServiceRetirement
+        ae_instance: Default
+        ae_message: 
+        ae_attributes: {}
+        dialog_label: VMware - CatalogItem (flex)
+      custom_buttons: []
+      custom_button_sets: []
+    - name: New Windows Server 2012 R2 in Workgroup
+      description: 'Provisining a new VM with Windows Sevrer 2012 R2 '
+      type: 
+      display: true
+      service_type: atomic
+      prov_type: vmware
+      provision_cost: 
+      long_description: ''
+      options: {}
+      service_template_catalog_name: Local Datacenter
+      resource_actions:
+      - action: Provision
+        ae_namespace: Service/Provisioning/StateMachines
+        ae_class: ServiceProvision_Template
+        ae_instance: CatalogItemInitialization
+        ae_message: 
+        ae_attributes: {}
+        dialog_label: VMware - Generic - Build_VMProvisionRequest
+      custom_buttons: []
+      custom_button_sets: []
+    - name: New Windows Server 2008 R2 in workgroup
+      description: Provisning a new VM with Windows Server 2008 R2
+      type: 
+      display: true
+      service_type: atomic
+      prov_type: vmware
+      provision_cost: 
+      long_description: ''
+      options: {}
+      service_template_catalog_name: Local Datacenter
+      resource_actions:
+      - action: Provision
+        ae_namespace: Service/Provisioning/StateMachines
+        ae_class: ServiceProvision_Template
+        ae_instance: CatalogItemInitialization
+        ae_message: 
+        ae_attributes: {}
+        dialog_label: VMware - Generic - Build_VMProvisionRequest
+      - action: Retirement
+        ae_namespace: Service/Retirement/StateMachines
+        ae_class: ServiceRetirement
+        ae_instance: Default
+        ae_message: 
+        ae_attributes: {}
+        dialog_label: VMware - Generic - Build_VMProvisionRequest
+      custom_buttons: []
+      custom_button_sets: []
+    - name: New Windows Server 2012 R2 in Domain
+      description: Provisning new VM with Windows Server 2012 R2
+      type: 
+      display: true
+      service_type: atomic
+      prov_type: vmware
+      provision_cost: 
+      long_description: ''
+      options: {}
+      service_template_catalog_name: Local Datacenter
+      resource_actions:
+      - action: Provision
+        ae_namespace: Service/Provisioning/StateMachines
+        ae_class: ServiceProvision_Template
+        ae_instance: CatalogItemInitialization
+        ae_message: 
+        ae_attributes: {}
+        dialog_label: VMware - Generic - Build_VMProvisionRequest
+      - action: Retirement
+        ae_namespace: Service/Retirement/StateMachines
+        ae_class: ServiceRetirement
+        ae_instance: Default
+        ae_message: 
+        ae_attributes: {}
+        dialog_label: VMware - Generic - Build_VMProvisionRequest
+      custom_buttons: []
+      custom_button_sets: []
