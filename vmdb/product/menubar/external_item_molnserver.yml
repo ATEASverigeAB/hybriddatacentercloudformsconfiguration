@@ -1,0 +1,9 @@
+type: item  
+name: Molnserver  
+id: external_molnserver  
+feature: external_molnserver  
+rbac:  
+  feature: external_molnserver
+parent: external_menu  
+href: "/assets/atea/gotoMoln.html"
+item_type: big_iframe 

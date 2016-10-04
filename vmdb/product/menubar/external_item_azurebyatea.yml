@@ -1,0 +1,10 @@
+type: item  
+name: Azure by Atea  
+id: external_azurebyatea  
+feature: external_azurebyatea  
+rbac:  
+  feature: external_azurebyatea
+parent: external_menu  
+href: "https://portal.azure.com/"  
+item_type: big_iframe 
+

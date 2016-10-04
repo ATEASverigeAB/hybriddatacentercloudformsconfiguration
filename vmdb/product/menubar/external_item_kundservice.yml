@@ -1,0 +1,10 @@
+type: item  
+name: Kundservice  
+id: external_kundservice  
+feature: external_kundservice  
+rbac:  
+  feature: external_kundservice
+parent: external_menu  
+href: "https://atea.se/kundservice/"  
+item_type: big_iframe 
+

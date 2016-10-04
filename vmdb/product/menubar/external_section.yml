@@ -1,0 +1,6 @@
+type: section
+name: Atea
+id: external_menu
+icon: fa fa-plus fa-2x
+section_type: bigiframe
+href: "/assets/atea/index.html"
