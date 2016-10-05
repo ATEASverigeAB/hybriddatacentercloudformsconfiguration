@@ -30,7 +30,7 @@ do
 done
 
 
-## Export UI Customizations
+## Import UI Customizations
 echo
 echo "## Import UI Customizations"
 cp -va vmdb/* /var/www/miq/vmdb/
