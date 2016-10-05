@@ -23,33 +23,6 @@
         dialog_label: Provision new Server
       custom_buttons: []
       custom_button_sets: []
-    - name: New Windows Server 2012 R2
-      description: Provision new Windows Server 2012 R2
-      type: 
-      display: false
-      service_type: atomic
-      prov_type: vmware
-      provision_cost: 
-      long_description: 
-      options: {}
-      service_template_catalog_name: Local Datacenter
-      resource_actions:
-      - action: Provision
-        ae_namespace: Service/Provisioning/StateMachines
-        ae_class: ServiceProvision_Template
-        ae_instance: CatalogItemInitialization
-        ae_message: 
-        ae_attributes: {}
-        dialog_label: VMware - CatalogItem (flex)
-      - action: Retirement
-        ae_namespace: Service/Retirement/StateMachines
-        ae_class: ServiceRetirement
-        ae_instance: Default
-        ae_message: 
-        ae_attributes: {}
-        dialog_label: VMware - CatalogItem (flex)
-      custom_buttons: []
-      custom_button_sets: []
     - name: New Windows Server 2012 R2 in Workgroup
       description: 'Provisining a new VM with Windows Sevrer 2012 R2 '
       type: 
