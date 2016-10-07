@@ -22,7 +22,7 @@ cd AteaCloudformsConfiguration
 git pull
 
 ## Import CFME Database objects
-for i in `ls -d * |egrep -v "vmdb|port.sh"`
+for i in `ls -d * |egrep -v "vmdb|\.sh"`
 do
   echo
   echo "## Import " $i
