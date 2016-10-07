@@ -12,6 +12,7 @@ vmdb
 cp ${FILE} ${FILE}.old
 vi ${FILE}
 diff -u ${FILE}.old ${FILE} >~/AteaCloudformsConfiguration/patches/${FILE}.patch
+rm ${FILE}.old
 
 
 ## Save Patch
