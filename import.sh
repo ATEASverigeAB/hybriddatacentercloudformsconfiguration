@@ -28,12 +28,25 @@ do
   echo "## Import " $i
   miqimport $i $PWD/$i
 done
+#workaround bug:
+ls $PWD/tags/*                    |xargs miqimport tags
+ls $PWD/roles/*                   |xargs miqimport roles
+ls $PWD/buttons/*                 |xargs miqimport buttons
+ls $PWD/customization_templates/* |xargs miqimport customization_templates
 
 
 ## Import UI Customizations
 echo
 echo "## Import UI Customizations"
 cp -va vmdb/* /var/www/miq/vmdb/
+
+## Apply Patches
+echo
+echo "## Apply Patches"
+cd /var/www/miq/vmdb
+for i in $HOME/AteaCloudformsConfiguration/patches/*.patch; do
+  patch  -fp0 < $i
+done
 
 cd /var/www/miq/vmdb
 echo "## Precompile UI Customizations"

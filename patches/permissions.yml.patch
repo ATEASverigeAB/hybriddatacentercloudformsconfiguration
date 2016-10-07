@@ -1,0 +1,10 @@
+--- config/permissions.yml.old	2016-10-07 09:59:30.069266798 +0200
++++ config/permissions.yml	2016-10-07 10:01:04.880132484 +0200
+@@ -13,6 +13,7 @@
+ - :net
+ - :set
+ - :accessInsights
++- :external_menu
+ - ems-type:atomic_enterprise
+ - ems-type:azure
+ - ems-type:azure_network
