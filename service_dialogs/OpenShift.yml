@@ -29,7 +29,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -66,7 +66,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -103,7 +103,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: dev
+        default_value: 
         values:
         - - dev
           - Development
@@ -154,7 +154,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: openshift-ansible
+        default_value: 
         values:
         - - app
           - Application Server
@@ -206,7 +206,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -243,7 +243,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: '1'
+        default_value: 
         values:
         - - '1'
           - 1 Core
@@ -289,7 +289,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: '1024'
+        default_value: 
         values:
         - - '1024'
           - 1 GB
@@ -343,7 +343,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: VM Network
+        default_value: 
         values:
         - - VLAN-848
           - VLAN-848
@@ -385,7 +385,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: Template-CentOS6.8-x64
+        default_value: 
         values:
         - - Template-CentOS6.8-x64
           - CentOS 6.8 x64
@@ -433,7 +433,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: '1'
+        default_value: 
         values:
         - - '1'
           - '1'
@@ -475,7 +475,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: AteaStockholm6-Catalog
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -512,7 +512,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: []
         values_method: 
         values_method_options: {}
@@ -563,7 +563,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '2'
+        default_value: 
         values:
         - - '1'
           - '1'
@@ -609,7 +609,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: origin
+        default_value: 
         values:
         - - atomic-enterprise
           - atomic-enterprise
@@ -655,7 +655,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: t
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -691,7 +691,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: t
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -734,7 +734,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: http://example.com
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -771,7 +771,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "['/path/to/script1.js','/path/to/script2.js']"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -809,7 +809,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "['/path/to/stylesheet1.css','/path/to/stylesheet2."
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -846,7 +846,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "[{'name': 'images', 'sourceDirectory': '/path/to/my_images'}]"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -883,7 +883,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "/path/to/login-template.html"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -920,7 +920,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: https://hawkular-metrics.example.com/hawkular/metrics
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -958,7 +958,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: https://kibana.example.com
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -995,8 +995,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '{"maxImagesBulkImportedPerRepository": 3, "disableScheduledImport":
-          true}'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1040,7 +1039,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: registry.example.com
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1077,7 +1076,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: registry.example.com
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1114,7 +1113,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: registry.hacker.com
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1151,7 +1150,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: f
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1187,7 +1186,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '"-l warn --ipv6=false"'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1224,7 +1223,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: example.com/openshift3/ose-${component}:${version}
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1261,9 +1260,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "[{'id': 'openshift-origin-copr', 'name': 'OpenShift Origin
-          COPR', 'baseurl': 'https://copr-be.cloud.fedoraproject.org/results/maxamillion/origin-next/epel-7-$basearch/',
-          'enabled': 1, 'gpgcheck': 1, gpgkey: 'https://copr-be.cloud.fedoraproject.org/results/maxamillion/origin-next/pubkey.gpg'}]\n"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1300,8 +1297,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true',
-          'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/master/htpasswd'}]"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1338,7 +1334,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "{'user1': '<pre-hashed password>', 'user2': '<pre-hashed password>'}"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1375,7 +1371,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "<path to local pre-generated htpasswd file>"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1412,8 +1408,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "[{'name': 'allow_all', 'login': 'true', 'challenge': 'true',
-          'kind': 'AllowAllPasswordIdentityProvider'}]"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1450,7 +1445,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "<ca text>"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1487,7 +1482,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "<path to local ca file to use>"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1525,7 +1520,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1563,7 +1558,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1601,7 +1596,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1639,7 +1634,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1734,7 +1729,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1771,7 +1766,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1815,7 +1810,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: http://openstack.example.com:35357/v2.0/
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1852,7 +1847,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1889,7 +1884,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1926,7 +1921,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -1963,7 +1958,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2000,7 +1995,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2037,7 +2032,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2088,7 +2083,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2125,7 +2120,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2162,7 +2157,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2199,7 +2194,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2236,7 +2231,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2273,7 +2268,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: t
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2309,7 +2304,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "['cockpit-kubernetes']"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2402,7 +2397,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: openshift-ansible.test.example.com
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2439,7 +2434,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: openshift-ansible.test.example.com
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2476,7 +2471,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2513,7 +2508,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2550,7 +2545,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2587,7 +2582,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '30'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2624,7 +2619,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "{'resource-quota-sync-period': ['10s']}"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2661,7 +2656,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "{'max-requests-inflight': ['400']}"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2698,7 +2693,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: apps.test.example.com
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2735,7 +2730,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "['foo.example.com', 'bar.example.com']"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2772,7 +2767,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: "'region=primary'"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2809,7 +2804,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: 5m
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2846,7 +2841,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '86400'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2883,7 +2878,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '500'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2920,7 +2915,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '500'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -2957,7 +2952,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "['ceph','glusterfs','iscsi']"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3009,7 +3004,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: region=infra
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3046,7 +3041,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '2'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3083,7 +3078,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '{"certfile": "/path/to/router.crt", "keyfile": "/path/to/router.key"}'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3135,7 +3130,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "'region=infra'"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3172,7 +3167,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "'redhat/openshift-ovs-multitenant'"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3209,7 +3204,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: t
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3246,7 +3241,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: 10.1.0.0/16
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3284,7 +3279,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: '8'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3321,7 +3316,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: '8443'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3358,7 +3353,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: '8443'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3395,7 +3390,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3432,7 +3427,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: t
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3468,7 +3463,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '[{"certfile": "/path/to/custom1.crt", "keyfile": "/path/to/custom1.key"}]'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3505,8 +3500,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "[{\"certfile\": \"/path/to/custom1.crt\", \"keyfile\": \"/path/to/custom1.key\",
-          \"names\": [\"public-master-host.com\"]}]\n\n"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3543,7 +3537,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ssn
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3580,7 +3574,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '3600'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3618,7 +3612,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "['DONT+USE+THIS+SECRET+b4NV+pmZNSO']"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3655,7 +3649,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3692,7 +3686,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: 5s
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3729,7 +3723,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: t
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3765,7 +3759,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: t
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3801,7 +3795,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: 172.30.0.1
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3852,7 +3846,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: nfs
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3890,7 +3884,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "['ReadWriteMany']"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3927,7 +3921,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: registry
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -3965,7 +3959,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: nfs.example.com
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4002,7 +3996,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "'*(rw,root_squash)'"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4039,7 +4033,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "/exports"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4076,7 +4070,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: 3a650b4f-c8c5-4e0a-8ca5-eaee11f16c57
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4113,7 +4107,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: 10Gi
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4151,7 +4145,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ext4
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4202,8 +4196,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "{'max-pods': ['110'], 'image-gc-high-threshold': ['90'], 'image-gc-low-threshold':
-          ['80']}"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4240,12 +4233,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '[{"name": "syslog", "path": "/var/log/cron\n/var/log/maillog\n/var/log/messages\n/var/log/secure\n/var/log/spooler\n",
-          "options": ["daily", "rotate 7", "compress", "sharedscripts", "missingok"],
-          "scripts": {"postrotate": "/bin/kill -HUP `cat /var/run/syslogd.pid 2> /dev/null`
-          2> /dev/null || true"}}]
-
-'
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4282,7 +4270,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: t
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4319,7 +4307,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: f
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4355,7 +4343,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: http://USER:PASSWORD@IPADDR:PORT
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4392,7 +4380,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: https://USER:PASSWORD@IPADDR:PORT
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4429,7 +4417,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: "'.hosts.example.com,some-host.com'"
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4466,7 +4454,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: t
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4503,7 +4491,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: http://USER:PASSWORD@HOST:PORT
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4541,7 +4529,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: https://USER:PASSWORD@HOST:PORT
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4578,7 +4566,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: build_defaults
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4615,7 +4603,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: http://USER:PASSWORD@HOST:PORT
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4652,7 +4640,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: https://USER:PASSWORD@HOST:PORT
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4689,7 +4677,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: '''{"BuildDefaults":{"configuration":{"apiVersion":"v1","env":[{"name":"HTTP_PROXY","value":"http://proxy.example.com.redhat.com:3128"},{"name":"NO_PROXY","value":"ose3-master.example.com"}],"gitHTTPProxy":"http://proxy.example.com:3128","kind":"BuildDefaultsConfig"}}}'''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4726,7 +4714,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: f
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4762,7 +4750,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: t
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -4812,7 +4800,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: web
+        default_value: 
         values:
         - - app
           - Application
@@ -4856,7 +4844,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: openshift
+        default_value: 
         values:
         - - jbosseap
           - JBoss-EAP
@@ -4900,7 +4888,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: master
+        default_value: 
         values:
         - - master
           - Master
@@ -4942,7 +4930,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: prd
+        default_value: 
         values:
         - - acc
           - Acceptance

@@ -1,5 +1,5 @@
 type: item  
-name: Azure by Atea  
+name: Azure  
 id: external_azurebyatea  
 feature: external_azurebyatea  
 rbac:  
