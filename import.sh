@@ -20,6 +20,7 @@ cd $HOME
 [ ! -d AteaCloudformsConfiguration ] && git clone https://github.com/anjan03/AteaCloudformsConfiguration.git
 cd AteaCloudformsConfiguration
 git pull
+git checkout $version
 
 ## Import CFME Database objects
 for i in `ls -d * |egrep -v "vmdb|\.sh"`
