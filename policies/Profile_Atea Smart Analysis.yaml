@@ -26,7 +26,6 @@
       MiqPolicyContent:
       - qualifier: success
         success_sequence: 1
-        success_synchronous: true
         MiqEventDefinition:
           name: vm_scan_start
           description: VM Analysis Start
@@ -44,7 +43,6 @@
             :scan_item_set_name: Atea sample
       - qualifier: failure
         failure_sequence: 1
-        failure_synchronous: true
         MiqEventDefinition:
           name: vm_scan_start
           description: VM Analysis Start

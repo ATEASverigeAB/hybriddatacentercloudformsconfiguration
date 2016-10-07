@@ -65,7 +65,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -138,7 +138,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -177,7 +177,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: Incremental
+        default_value: 
         values:
         - - Complete
           - Complete (Delete other resources in the group)
@@ -226,7 +226,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -263,7 +263,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -300,7 +300,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}

@@ -1,126 +1,46 @@
 ---
 - description: 
   buttons: submit,cancel
-  label: Ansible VMware - Generic - Build_VMProvisionRequest
+  label: tesst001
   dialog_tabs:
   - description: 
     display: edit
-    label: virtualmachine
+    label: Basic Information
     display_method: 
     display_method_options: 
     position: 0
     dialog_groups:
     - description: 
       display: edit
-      label: Service Information
+      label: Options
       display_method: 
       display_method_options: 
       position: 0
       dialog_fields:
-      - name: service_name
-        description: 
+      - name: limit
+        description: A ':'-separated string to constrain the list of hosts managed
+          or affected by the playbook
         type: DialogFieldTextBox
-        data_type: 
-        notes: 
-        notes_display: 
-        display: edit
-        display_method: 
-        display_method_options: {}
-        required: false
-        required_method: 
-        required_method_options: {}
-        default_value: 
-        values: 
-        values_method: 
-        values_method_options: {}
-        options:
-          :protected: false
-        label: Service Name
-        position: 0
-        validator_type: 
-        validator_rule: 
-        reconfigurable: 
-        dynamic: 
-        show_refresh_button: 
-        load_values_on_init: 
-        read_only: 
-        auto_refresh: 
-        trigger_auto_refresh: 
-        resource_action:
-          action: 
-          resource_type: DialogField
-          ae_namespace: 
-          ae_class: 
-          ae_instance: 
-          ae_message: 
-          ae_attributes: {}
-      - name: service_description
-        description: 
-        type: DialogFieldTextAreaBox
-        data_type: 
-        notes: 
-        notes_display: 
-        display: edit
-        display_method: 
-        display_method_options: {}
-        required: false
-        required_method: 
-        required_method_options: {}
-        default_value: 
-        values: 
-        values_method: 
-        values_method_options: {}
-        options:
-          :protected: false
-        label: Service Description
-        position: 1
-        validator_type: 
-        validator_rule: 
-        reconfigurable: 
-        dynamic: 
-        show_refresh_button: 
-        load_values_on_init: 
-        read_only: 
-        auto_refresh: 
-        trigger_auto_refresh: 
-        resource_action:
-          action: 
-          resource_type: DialogField
-          ae_namespace: 
-          ae_class: 
-          ae_instance: 
-          ae_message: 
-          ae_attributes: {}
-      - name: tag_0_environment
-        description: 
-        type: DialogFieldRadioButton
         data_type: string
         notes: 
         notes_display: 
         display: edit
         display_method: 
         display_method_options: {}
-        required: true
+        required: false
         required_method: 
         required_method_options: {}
         default_value: 
-        values:
-        - - dev
-          - Development
-        - - prod
-          - Production
-        - - test
-          - Test
+        values: 
         values_method: 
         values_method_options: {}
         options:
-          :sort_by: :description
-          :sort_order: :ascending
-        label: Environment *
-        position: 2
+          :protected: false
+        label: Limit
+        position: 0
         validator_type: 
         validator_rule: 
-        reconfigurable: 
+        reconfigurable: true
         dynamic: 
         show_refresh_button: 
         load_values_on_init: 
@@ -135,15 +55,15 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
-    - description: ''
+    - description: 
       display: edit
-      label: VM Information
+      label: Survey
       display_method: 
       display_method_options: 
       position: 1
       dialog_fields:
-      - name: param_role
-        description: 
+      - name: param_deployment_type
+        description: Deployment Type
         type: DialogFieldDropDownList
         data_type: string
         notes: 
@@ -156,28 +76,24 @@
         required_method_options: {}
         default_value: 
         values:
-        - - app
-          - Application Server
-        - - mcenirm.postgresql94-server
-          - Database Server
-        - - file
-          - File Server
-        - - lamp
-          - LAMP Server
-        - - std
-          - Standard Server
-        - - web
-          - Web Server
+        - - atomic-enterprise
+          - atomic-enterprise
+        - - online
+          - online
+        - - openshift-enterprise
+          - openshift-enterprise
+        - - origin
+          - origin
         values_method: 
         values_method_options: {}
         options:
           :sort_by: :description
           :sort_order: :ascending
-        label: Role *
+        label: Deployment Type
         position: 0
         validator_type: 
         validator_rule: 
-        reconfigurable: 
+        reconfigurable: true
         dynamic: 
         show_refresh_button: 
         load_values_on_init: 
@@ -192,29 +108,34 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
-      - name: param_vm_name
-        description: 
-        type: DialogFieldTextBox
+      - name: param_openshift_install_examples
+        description: Install Examples
+        type: DialogFieldDropDownList
         data_type: string
         notes: 
         notes_display: 
         display: edit
         display_method: 
         display_method_options: {}
-        required: true
+        required: false
         required_method: 
         required_method_options: {}
         default_value: 
-        values: 
+        values:
+        - - 'false'
+          - 'false'
+        - - 'true'
+          - 'true'
         values_method: 
         values_method_options: {}
         options:
-          :protected: false
-        label: Name *
+          :sort_by: :description
+          :sort_order: :ascending
+        label: Install Examples
         position: 1
         validator_type: 
         validator_rule: 
-        reconfigurable: 
+        reconfigurable: true
         dynamic: 
         show_refresh_button: 
         load_values_on_init: 
@@ -229,42 +150,38 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
-      - name: param_vm_cpus
-        description: Number of CPU cores
+      - name: param_use_cluster_metrics
+        description: Cluster Metrics
         type: DialogFieldDropDownList
-        data_type: integer
+        data_type: string
         notes: 
         notes_display: 
         display: edit
         display_method: 
         display_method_options: {}
-        required: true
+        required: false
         required_method: 
         required_method_options: {}
         default_value: 
         values:
-        - - '1'
-          - 1 Core
-        - - '2'
-          - 2 Cores
-        - - '4'
-          - 4 Cores
-        - - '8'
-          - 8 Cores
+        - - 'false'
+          - 'false'
+        - - 'true'
+          - 'true'
         values_method: 
         values_method_options: {}
         options:
           :sort_by: :description
           :sort_order: :ascending
-        label: Number of cores
+        label: Cluster Metrics
         position: 2
         validator_type: 
         validator_rule: 
-        reconfigurable: 
-        dynamic: false
+        reconfigurable: true
+        dynamic: 
         show_refresh_button: 
         load_values_on_init: 
-        read_only: false
+        read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
         resource_action:
@@ -275,50 +192,33 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
-      - name: param_vm_memory
-        description: Amount of memory assign to the virtual machine
-        type: DialogFieldDropDownList
-        data_type: integer
+      - name: param_openshift_master_metrics_public_url
+        description: Metrics URL
+        type: DialogFieldTextBox
+        data_type: string
         notes: 
         notes_display: 
         display: edit
         display_method: 
         display_method_options: {}
-        required: true
+        required: false
         required_method: 
         required_method_options: {}
         default_value: 
-        values:
-        - - '1024'
-          - 1 GB
-        - - '2048'
-          - 2 GB
-        - - '4096'
-          - 4 GB
-        - - '8192'
-          - 8 GB
-        - - '12288'
-          - 12 GB
-        - - '16384'
-          - 16 GB
-        - - '32768'
-          - 32 GB
-        - - '512'
-          - 512 MB
+        values: 
         values_method: 
         values_method_options: {}
         options:
-          :sort_by: :description
-          :sort_order: :ascending
-        label: Memory
+          :protected: false
+        label: Metrics URL
         position: 3
         validator_type: 
         validator_rule: 
-        reconfigurable: 
-        dynamic: false
+        reconfigurable: true
+        dynamic: 
         show_refresh_button: 
         load_values_on_init: 
-        read_only: false
+        read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
         resource_action:
@@ -329,82 +229,29 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
-      - name: param_network_name
-        description: 
-        type: DialogFieldDropDownList
+      - name: param_openshift_master_logging_public_url
+        description: Logging URL
+        type: DialogFieldTextBox
         data_type: string
         notes: 
         notes_display: 
         display: edit
         display_method: 
         display_method_options: {}
-        required: true
+        required: false
         required_method: 
         required_method_options: {}
         default_value: 
-        values:
-        - - VLAN-848
-          - VLAN-848
-        - - VM Network
-          - VM Network
+        values: 
         values_method: 
         values_method_options: {}
         options:
-          :sort_by: :description
-          :sort_order: :ascending
-        label: VM Network
+          :protected: false
+        label: Logging URL
         position: 4
         validator_type: 
         validator_rule: 
-        reconfigurable: 
-        dynamic: false
-        show_refresh_button: 
-        load_values_on_init: 
-        read_only: false
-        auto_refresh: 
-        trigger_auto_refresh: 
-        resource_action:
-          action: 
-          resource_type: DialogField
-          ae_namespace: 
-          ae_class: 
-          ae_instance: 
-          ae_message: 
-          ae_attributes: {}
-      - name: param_template_name
-        description: 
-        type: DialogFieldDropDownList
-        data_type: string
-        notes: 
-        notes_display: 
-        display: edit
-        display_method: 
-        display_method_options: {}
-        required: true
-        required_method: 
-        required_method_options: {}
-        default_value: 
-        values:
-        - - Template-CentOS6.8-x64
-          - CentOS 6.8 x64
-        - - Template-Windows2008R2std
-          - Windows 2008 R2 Standard
-        - - Template-Windows2008std
-          - Windows 2008 Standard
-        - - Template-Windows2012R2std
-          - Windows 2012 R2 Standard
-        - - Template-Windows2012std
-          - Windows 2012 Standard
-        values_method: 
-        values_method_options: {}
-        options:
-          :sort_by: :description
-          :sort_order: :ascending
-        label: Template
-        position: 5
-        validator_type: 
-        validator_rule: 
-        reconfigurable: 
+        reconfigurable: true
         dynamic: 
         show_refresh_button: 
         load_values_on_init: 
@@ -419,50 +266,8 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
-      - name: param_number_of_vms
-        description: 
-        type: DialogFieldDropDownList
-        data_type: integer
-        notes: 
-        notes_display: 
-        display: edit
-        display_method: 
-        display_method_options: {}
-        required: true
-        required_method: 
-        required_method_options: {}
-        default_value: 
-        values:
-        - - '1'
-          - '1'
-        - - '2'
-          - '2'
-        values_method: 
-        values_method_options: {}
-        options:
-          :sort_by: :description
-          :sort_order: :ascending
-        label: Number of VMs
-        position: 6
-        validator_type: 
-        validator_rule: 
-        reconfigurable: 
-        dynamic: 
-        show_refresh_button: 
-        load_values_on_init: 
-        read_only: 
-        auto_refresh: 
-        trigger_auto_refresh: 
-        resource_action:
-          action: 
-          resource_type: DialogField
-          ae_namespace: 
-          ae_class: 
-          ae_instance: 
-          ae_message: 
-          ae_attributes: {}
-      - name: param_catalog_name
-        description: 
+      - name: param_openshift_master_cluster_public_hostname
+        description: OpenShift URL
         type: DialogFieldTextBox
         data_type: string
         notes: 
@@ -479,15 +284,279 @@
         values_method_options: {}
         options:
           :protected: false
-        label: Catalog
+        label: OpenShift URL
+        position: 5
+        validator_type: 
+        validator_rule: 
+        reconfigurable: true
+        dynamic: 
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: 
+        auto_refresh: 
+        trigger_auto_refresh: 
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+      - name: param_openshift_master_identity_providers
+        description: Identity Provider
+        type: DialogFieldTextBox
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: true
+        required_method: 
+        required_method_options: {}
+        default_value: 
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :protected: false
+        label: Identity Provider
+        position: 6
+        validator_type: 
+        validator_rule: 
+        reconfigurable: true
+        dynamic: 
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: 
+        auto_refresh: 
+        trigger_auto_refresh: 
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+      - name: param_openshift_master_htpasswd_users
+        description: Users
+        type: DialogFieldTextBox
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value: 
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :protected: false
+        label: Users
         position: 7
         validator_type: 
         validator_rule: 
-        reconfigurable: 
-        dynamic: false
+        reconfigurable: true
+        dynamic: 
         show_refresh_button: 
         load_values_on_init: 
-        read_only: true
+        read_only: 
+        auto_refresh: 
+        trigger_auto_refresh: 
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+      - name: param_openshift_master_default_subdomain
+        description: Apps SubDomain
+        type: DialogFieldTextBox
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: true
+        required_method: 
+        required_method_options: {}
+        default_value: 
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :protected: false
+        label: Apps SubDomain
+        position: 8
+        validator_type: 
+        validator_rule: 
+        reconfigurable: true
+        dynamic: 
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: 
+        auto_refresh: 
+        trigger_auto_refresh: 
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+      - name: param_use_openshift_sdn
+        description: OpenShift SDN
+        type: DialogFieldDropDownList
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value: 
+        values:
+        - - 'false'
+          - 'false'
+        - - 'true'
+          - 'true'
+        values_method: 
+        values_method_options: {}
+        options:
+          :sort_by: :description
+          :sort_order: :ascending
+        label: OpenShift SDN
+        position: 9
+        validator_type: 
+        validator_rule: 
+        reconfigurable: true
+        dynamic: 
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: 
+        auto_refresh: 
+        trigger_auto_refresh: 
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+      - name: param_osm_cluster_network_cidr
+        description: Container Network
+        type: DialogFieldTextBox
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: true
+        required_method: 
+        required_method_options: {}
+        default_value: 
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :protected: false
+        label: Container Network
+        position: 10
+        validator_type: 
+        validator_rule: 
+        reconfigurable: true
+        dynamic: 
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: 
+        auto_refresh: 
+        trigger_auto_refresh: 
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+      - name: param_osm_host_subnet_length
+        description: Host subnet length
+        type: DialogFieldTextBox
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value: 
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :protected: false
+        label: Host subnet length
+        position: 11
+        validator_type: 
+        validator_rule: 
+        reconfigurable: true
+        dynamic: 
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: 
+        auto_refresh: 
+        trigger_auto_refresh: 
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+      - name: param_openshift_http_proxy
+        description: HTTP Proxy
+        type: DialogFieldTextBox
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value: 
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :protected: false
+        label: HTTP Proxy
+        position: 12
+        validator_type: 
+        validator_rule: 
+        reconfigurable: true
+        dynamic: 
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
         resource_action:

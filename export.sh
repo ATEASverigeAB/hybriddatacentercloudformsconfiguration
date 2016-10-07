@@ -39,6 +39,9 @@ cd /var/www/miq/vmdb/
 cp -a -f --parents \
    ./public/assets/atea/                              \
    ./product/menubar/                                 \
+   ./db/fixtunes/miq_product_features/menu_external.yml		      \
+   ./db/fixtunes/miq_product_roles/redhat_access_user_roles.yml                   \
+   ./config/permissions.yml                           \
    ./app/assets/stylesheets/main.scss                 \
    ./app/assets/stylesheets/icon_customizations.scss  \
    ./productization/assets/stylesheets/main.scss      \

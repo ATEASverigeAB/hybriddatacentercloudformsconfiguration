@@ -29,7 +29,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -66,7 +66,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -102,7 +102,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: test
+        default_value: 
         values:
         - - dev
           - Development
@@ -153,7 +153,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: app
+        default_value: 
         values:
         - - app
           - Application Server
@@ -201,7 +201,7 @@
         required: false
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -238,7 +238,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: xsmall
+        default_value: 
         values:
         - - large
           - Large - 2 vCPU x 4 GB RAM
@@ -328,7 +328,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: 'false'
+        default_value: 
         values:
         - - 'false'
           - 'False'

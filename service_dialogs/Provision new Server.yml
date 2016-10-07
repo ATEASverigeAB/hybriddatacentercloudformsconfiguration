@@ -74,7 +74,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
@@ -111,7 +111,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: '1'
+        default_value: 
         values:
         - - '1'
           - '1'
@@ -155,7 +155,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: '1024'
+        default_value: 
         values:
         - - '512'
           - '512'

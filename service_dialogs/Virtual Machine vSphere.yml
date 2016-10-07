@@ -29,7 +29,7 @@
         required: true
         required_method: 
         required_method_options: {}
-        default_value: ''
+        default_value: 
         values: 
         values_method: 
         values_method_options: {}
