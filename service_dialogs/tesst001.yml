@@ -2,6 +2,7 @@
 - description: 
   buttons: submit,cancel
   label: tesst001
+  blueprint_id: 
   dialog_tabs:
   - description: 
     display: edit
@@ -47,6 +48,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -100,6 +102,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -142,6 +145,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -184,6 +188,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -221,6 +226,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -258,6 +264,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -295,6 +302,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -332,6 +340,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -369,6 +378,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -406,6 +416,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -448,6 +459,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -485,6 +497,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -522,6 +535,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField
@@ -559,6 +573,7 @@
         read_only: 
         auto_refresh: 
         trigger_auto_refresh: 
+        visible: true
         resource_action:
           action: 
           resource_type: DialogField

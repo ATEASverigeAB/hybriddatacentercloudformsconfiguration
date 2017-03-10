@@ -1,0 +1,61 @@
+---
+- MiqPolicySet:
+    name: d4d8cfd4-8941-11e6-8f43-005056a61da7
+    description: Atea Smart Analysis
+    set_type: MiqPolicySet
+    guid: d4d8cfd4-8941-11e6-8f43-005056a61da7
+    read_only: 
+    set_data: 
+    mode: control
+    owner_type: 
+    owner_id: 
+    userid: 
+    group_id: 
+    MiqPolicy:
+    - name: 42a37de4-8941-11e6-8f43-005056a61da7
+      description: Smart Analysis
+      expression: 
+      towhat: Vm
+      guid: 42a37de4-8941-11e6-8f43-005056a61da7
+      created_by: admin
+      updated_by: admin
+      notes: 
+      active: true
+      mode: control
+      read_only: 
+      MiqPolicyContent:
+      - qualifier: success
+        success_sequence: 1
+        MiqEventDefinition:
+          name: vm_scan_start
+          description: VM Analysis Start
+          guid: 89cb72b0-6616-11e6-91a3-005056a61da7
+          event_type: Default
+          definition: 
+          default: 
+          enabled: 
+        MiqAction:
+          name: 1f11d5a6-8941-11e6-8f43-005056a61da7
+          description: Atea Smart Analysis
+          guid: 1f11d5a6-8941-11e6-8f43-005056a61da7
+          action_type: assign_scan_profile
+          options:
+            :scan_item_set_name: Atea sample
+      - qualifier: failure
+        failure_sequence: 1
+        MiqEventDefinition:
+          name: vm_scan_start
+          description: VM Analysis Start
+          guid: 89cb72b0-6616-11e6-91a3-005056a61da7
+          event_type: Default
+          definition: 
+          default: 
+          enabled: 
+        MiqAction:
+          name: 1f11d5a6-8941-11e6-8f43-005056a61da7
+          description: Atea Smart Analysis
+          guid: 1f11d5a6-8941-11e6-8f43-005056a61da7
+          action_type: assign_scan_profile
+          options:
+            :scan_item_set_name: Atea sample
+      Condition: []

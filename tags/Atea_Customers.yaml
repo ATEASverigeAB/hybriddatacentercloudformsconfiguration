@@ -1,0 +1,43 @@
+---
+- description: Atea Customers
+  icon: 
+  read_only: false
+  syntax: string
+  single_value: false
+  example_text: Atea Customers
+  parent_id: 0
+  show: true
+  default: 
+  perf_by_tag: true
+  name: ahdc_customers
+  entries:
+  - description: Atea
+    icon: 
+    read_only: false
+    syntax: string
+    single_value: false
+    example_text: 
+    show: true
+    default: 
+    perf_by_tag: 
+    name: atea
+  - description: cust01
+    icon: 
+    read_only: false
+    syntax: string
+    single_value: false
+    example_text: 
+    show: true
+    default: 
+    perf_by_tag: 
+    name: cust01
+  - description: cust02
+    icon: 
+    read_only: false
+    syntax: string
+    single_value: false
+    example_text: 
+    show: true
+    default: 
+    perf_by_tag: 
+    name: cust02
