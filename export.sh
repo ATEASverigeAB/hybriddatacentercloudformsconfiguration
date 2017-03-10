@@ -1,3 +1,4 @@
+
 #!/bin/sh
 
 export RUBYOPT=W0
@@ -21,7 +22,7 @@ cd $HOME
 [ ! -d AteaCloudformsConfiguration ] && git clone https://github.com/anjan03/AteaCloudformsConfiguration.git
 cd AteaCloudformsConfiguration
 git pull
-
+git checkout v4.2
 
 ## Export CFME Database objects
 for i in `ls -d * |egrep -v "vmdb|port.sh"`
@@ -53,6 +54,6 @@ echo
 echo "## Upload AteaCloud Configuration repository"
 cd $HOME/AteaCloudformsConfiguration
 git add .
-git commit -m "`date +%Y%m%d` `hostname -f`"
-git push   -u origin master
+git commit -m "`date +%Y%m%d`"
+git push   -u origin v4.2
 
